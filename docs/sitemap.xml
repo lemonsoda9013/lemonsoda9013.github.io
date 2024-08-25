@@ -28,10 +28,10 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/articles/others/</loc>
+  </url><url>
     <loc>http://localhost:1313/stack/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/articles/others/</loc>
   </url>
 </urlset>
