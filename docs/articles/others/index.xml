@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Others on LEMONSODA9013</title>
-    <link>http://localhost:1313/articles/others/</link>
+    <link>https://lemonsoda9013.github.io/articles/others/</link>
     <description>Recent content in Others on LEMONSODA9013</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/articles/others/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lemonsoda9013.github.io/articles/others/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homepage on LEMONSODA9013</title>
-    <link>http://localhost:1313/</link>
+    <link>https://lemonsoda9013.github.io/</link>
     <description>Recent content in Homepage on LEMONSODA9013</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lemonsoda9013.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme Installation</title>
-      <link>http://localhost:1313/articles/category1/installation/</link>
+      <link>https://lemonsoda9013.github.io/articles/category1/installation/</link>
       <pubDate>Sun, 19 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/category1/installation/</guid>
+      <guid>https://lemonsoda9013.github.io/articles/category1/installation/</guid>
       <description>Create a new hugo website or open your existing hugo site.&#xA;Add the theme to your hugo site Use as a git submodule:&#xA;git submodule add https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden Clone the repository (one-off, updating the theme may be harder later):&#xA;git clone https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden Setup Copy package.json, package-lock.json and tailwind.config.js files from the theme/digitalgarden folder to the root folder of your the website Run npm install to install required packages for theme Run npm i -g postcss-cli to use PostCSS with Hugo build Set theme = &#39;digitalgarden&#39; in config.</description>
     </item>
     <item>
       <title>Pastry jelly cookie sugar donut orange</title>
-      <link>http://localhost:1313/portfolio/design1/</link>
+      <link>https://lemonsoda9013.github.io/portfolio/design1/</link>
       <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/design1/</guid>
+      <guid>https://lemonsoda9013.github.io/portfolio/design1/</guid>
       <description>Croissant orange croissant dolor orange croissant. Lollipop biscuit donut vanilla sweet croissant. Apple donut candy tiramisu cream jelly. Croissant sweet cookie vanilla tiramisu dolor.&#xA;Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.&#xA;Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</description>
     </item>
     <item>
       <title>Cream sugar apple donut apple croissant</title>
-      <link>http://localhost:1313/portfolio/design2/</link>
+      <link>https://lemonsoda9013.github.io/portfolio/design2/</link>
       <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/design2/</guid>
+      <guid>https://lemonsoda9013.github.io/portfolio/design2/</guid>
       <description>Tiramisu sprinkles marzipan lollipop marzipan dolor. Jelly candy marzipan vanilla candy ipsum. Sugar croissant lollipop vanilla cream marzipan. Sprinkles croissant cream dolor jelly marzipan.&#xA;Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.&#xA;Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</description>
     </item>
     <item>
       <title>Apple cream vanilla apple marzipan muffin</title>
-      <link>http://localhost:1313/portfolio/design3/</link>
+      <link>https://lemonsoda9013.github.io/portfolio/design3/</link>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/design3/</guid>
+      <guid>https://lemonsoda9013.github.io/portfolio/design3/</guid>
       <description>Tiramisu sprinkles marzipan lollipop marzipan dolor. Jelly candy marzipan vanilla candy ipsum. Sugar croissant lollipop vanilla cream marzipan. Sprinkles croissant cream dolor jelly marzipan.&#xA;Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.&#xA;Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</description>
     </item>
   </channel>
