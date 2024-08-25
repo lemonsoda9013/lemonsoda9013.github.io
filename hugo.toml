@@ -1,0 +1,64 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "LEMONSODA9013"
+theme = "digitalgarden"
+
+googleAnalytics = "UA-PROPERTY_ID"
+
+[Params]
+  description = "My Digital Garden on the Internet"
+  images = ['/digital-garden-logo.png']
+  enableSearch = true
+
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  name = 'Content'
+  params.header = true
+  weight = 2
+[[menu.main]]
+  name = 'All Articles'
+  url = '/articles'
+  weight = 3
+[[menu.main]]
+  name = 'category 1'
+  url = '/articles/category1'
+  weight = 4
+[[menu.main]]
+  name = 'others'
+  url = '/articles/others'
+  weight = 5
+[[menu.main]]
+  name = 'Links'
+  params.header = true
+  weight = 6
+[[menu.main]]
+  name = 'Github'
+  url = 'https://github.com/lemonsoda9013'
+  weight = 7
+
+[[menu.social]]
+  name = 'Twitter'
+  url = 'https://twitter.com/lemonsoda9013'
+  weight = 1
+[[menu.social]]
+  name = 'GitHub'
+  url = 'https://github.com/lemonsoda9013'
+  weight = 2
+[[menu.social]]
+  name = 'Email'
+  url = 'mailto:z2285724939@gmail.com'
+  weight = 3
+
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
