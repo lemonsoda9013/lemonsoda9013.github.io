@@ -16,9 +16,9 @@
 
 * 新建一个Public仓库，Repository name设置为“自己的用户名.github.io”
 
-* 在仓库设置中找到Pages，选择一个Branch，文件夹选择仓库根目录
+* 在仓库设置中找到Pages，选择一个Branch，文件夹选择/docs
 
-* 可以通过“自己用户名.github.io”这个网址访问仓库中对应Branch的页面，网页文件放置在仓库根目录下
+* 可以通过“自己用户名.github.io”这个网址访问仓库中对应Branch的页面
 
 * 把这个仓库拉取到本地
 
@@ -33,6 +33,10 @@
 * 使用```git submodule```或```git clone```下载模板，参照模板的文件结构把对应的文件复制到仓库根目录下（这一步可能与Hugo官方教程不同）
 
 * 在仓库目录执行```hugo server```，点击窗口中的网址，可以在本地预览网页
+
+* 在仓库目录执行```hugo```，此时在public文件夹生成实际用于部署的文件（重要步骤）
+
+* 同步仓库之前把public文件夹更名为docs（和之前的设置有关）
 
 ### Digital Garden模板
 
@@ -60,6 +64,7 @@
     ```
 * 控制侧边栏
     ```
+    baseURL = "https://lemonsoda9013.github.io/" # 必须改成自己的网址
     title = "LEMONSODA9013" # 侧边栏左上角显示的内容
 
     [menu]                  # 侧边栏的菜单，weight决定上下顺序
