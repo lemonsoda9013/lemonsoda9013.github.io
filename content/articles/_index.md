@@ -1,3 +1,3 @@
 ---
-title: All Articles
+title: Articles
 ---

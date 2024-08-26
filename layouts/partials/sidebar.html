@@ -15,10 +15,14 @@
   </p>
 
   {{ $permalink := cond (eq (len .RelPermalink) 1) .RelPermalink (strings.TrimRight "/" .RelPermalink) }}
+  {{ $urlParts := split $permalink "/"}}
+  {{ $urlDepth := len $urlParts }}
+  {{ $parentpermalink := path.Dir $permalink }}
+
   <ul class="list-none flex flex-col gap-1">
     {{ range .Site.Menus.main }}
     <li>
-      <a class="px-2 py-1.5 rounded-md text-sm flex items-center justify-between {{ if .Params.Header }} text-slate-400 font-semibold pb-0 pl-1 border-b cursor-default pointer-events-none {{ else if eq .URL $permalink }} bg-slate-800 text-white dark:bg-slate-50 dark:text-slate-800 dark:selection:bg-slate-400 {{ else }} hover:bg-slate-200 dark:hover:bg-slate-700 {{ end }}"
+      <a class="px-2 py-1.5 rounded-md text-sm flex items-center justify-between {{ if .Params.Header }} text-slate-400 font-semibold pb-0 pl-1 border-b cursor-default pointer-events-none {{ else if and (ge $urlDepth 4) (eq .URL $parentpermalink) }} bg-slate-800 text-white dark:bg-slate-50 dark:text-slate-800 dark:selection:bg-slate-400 {{ else if and (lt $urlDepth 4) (eq .URL $permalink) }} bg-slate-800 text-white dark:bg-slate-50 dark:text-slate-800 dark:selection:bg-slate-400 {{ else }} hover:bg-slate-200 dark:hover:bg-slate-700 {{ end }}"
         href="{{ if .URL }}{{ .URL }}{{ else }}#{{ end }}" {{ if strings.HasPrefix .URL "http" }} target="_blank"
         rel="noopener" {{ end }}>
         <span>{{ .Name }}</span>

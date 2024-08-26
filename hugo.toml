@@ -6,8 +6,8 @@ theme = "digitalgarden"
 googleAnalytics = "UA-PROPERTY_ID"
 
 [Params]
-  description = "My Digital Garden on the Internet"
-  images = ['/digital-garden-logo.png']
+  description = "LEMONSODA9013's Personal Homepage"
+  images = ['/lemon.png']
   enableSearch = true
 
 
@@ -21,25 +21,33 @@ googleAnalytics = "UA-PROPERTY_ID"
   params.header = true
   weight = 2
 [[menu.main]]
-  name = 'All Articles'
+  name = 'Articles'
   url = '/articles'
   weight = 3
 [[menu.main]]
-  name = 'category 1'
-  url = '/articles/category1'
+  name = 'Categories'
+  params.header = true
   weight = 4
 [[menu.main]]
-  name = 'others'
-  url = '/articles/others'
+  name = 'Original'
+  url = '/articles/original'
   weight = 5
+[[menu.main]]
+  name = 'Collections'
+  url = '/articles/collections'
+  weight = 6
+[[menu.main]]
+  name = 'Minecraft@music'
+  url = '/articles/minecraft'
+  weight = 7
 [[menu.main]]
   name = 'Links'
   params.header = true
-  weight = 6
+  weight = 8
 [[menu.main]]
   name = 'Github'
   url = 'https://github.com/lemonsoda9013'
-  weight = 7
+  weight = 9
 
 [[menu.social]]
   name = 'Twitter'

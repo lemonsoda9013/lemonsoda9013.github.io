@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minecraft Server Online Players</title>
+</head>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<body>
+  <h1>Minecraft Server Online Players</h1>
+  <script>
+    $.ajax({
+        url: 'https://api.imlazy.ink/mcapi/?host=acffd71f-ea7f-c27d-101b-1344a5becd3e.ofalias.com&port=56226&type=json',
+        type: 'get',
+        dataType: 'json',  
+        crossDomain: true,
+         success: function(response, status){
+                        console.log('请求生存服数据：' + status);
+                        console.log(response);
+                        $('#scplayer').replaceWith(response.players_online + ' 人');//在线玩家
+                        $('#scstatus').replaceWith('当前' + response.status);//服务器开启或关闭状态
+
+                        // 将 favicon 图片显示在页面中
+                        if (response.favicon) {
+                            $('#favicon').attr('src', response.favicon);
+                        }
+                    },
+        data: {},
+    });
+  </script>
+  <div>当前服务器<span id="scstatus">检测中</span> <span id="scplayer"></span></div>
+  <img id="favicon" alt="Server Favicon" style="display: block; margin-top: 20px;">
+</body>
+</html>

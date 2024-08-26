@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homepage on LEMONSODA9013</title>
-    <link>https://lemonsoda9013.github.io/</link>
-    <description>Recent content in Homepage on LEMONSODA9013</description>
+    <title>Minecraft@music on LEMONSODA9013</title>
+    <link>https://lemonsoda9013.github.io/articles/minecraft/</link>
+    <description>Recent content in Minecraft@music on LEMONSODA9013</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lemonsoda9013.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lemonsoda9013.github.io/articles/minecraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sprint Racer [1.21.1]</title>
       <link>https://lemonsoda9013.github.io/articles/minecraft/racer/</link>
@@ -28,27 +28,6 @@
       <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://lemonsoda9013.github.io/articles/minecraft/bingo/</guid>
       <description>在原版世界中收集指定的物品，首先达成目标数量连线的队伍获胜&#xA;说明 游戏未开始时加入服务器会进入大厅，可以在大厅设置游戏的模式与选项 游戏开始后玩家会被传送到原版世界，需要在这里收集指定的物品 中途加入的玩家是旁观模式 一局游戏结束后，需要所有玩家退出服务器，服务器才会重启 服务器重启完成后可以进入大厅，并开始下一局游戏 客户端 原版可玩，建议使用Fabric端并安装对应mod&#xA;下载链接</description>
-    </item>
-    <item>
-      <title>Pastry jelly cookie sugar donut orange</title>
-      <link>https://lemonsoda9013.github.io/portfolio/design1/</link>
-      <pubDate>Sat, 18 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://lemonsoda9013.github.io/portfolio/design1/</guid>
-      <description>Croissant orange croissant dolor orange croissant. Lollipop biscuit donut vanilla sweet croissant. Apple donut candy tiramisu cream jelly. Croissant sweet cookie vanilla tiramisu dolor.&#xA;Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.&#xA;Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</description>
-    </item>
-    <item>
-      <title>Cream sugar apple donut apple croissant</title>
-      <link>https://lemonsoda9013.github.io/portfolio/design2/</link>
-      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://lemonsoda9013.github.io/portfolio/design2/</guid>
-      <description>Tiramisu sprinkles marzipan lollipop marzipan dolor. Jelly candy marzipan vanilla candy ipsum. Sugar croissant lollipop vanilla cream marzipan. Sprinkles croissant cream dolor jelly marzipan.&#xA;Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.&#xA;Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</description>
-    </item>
-    <item>
-      <title>Apple cream vanilla apple marzipan muffin</title>
-      <link>https://lemonsoda9013.github.io/portfolio/design3/</link>
-      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://lemonsoda9013.github.io/portfolio/design3/</guid>
-      <description>Tiramisu sprinkles marzipan lollipop marzipan dolor. Jelly candy marzipan vanilla candy ipsum. Sugar croissant lollipop vanilla cream marzipan. Sprinkles croissant cream dolor jelly marzipan.&#xA;Pastry jelly cookie sugar donut orange. Candy sweet cookie sweet donut marzipan. Vanilla cookie sprinkles pastry orange cookie. Marzipan donut ipsum sugar biscuit vanilla.&#xA;Candy cookie muffin pastry lollipop vanilla. Apple orange tiramisu jelly ipsum sugar. Candy cake orange ipsum orange muffin. Sugar pastry orange cream orange pastry.</description>
     </item>
   </channel>
 </rss>

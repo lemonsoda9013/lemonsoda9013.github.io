@@ -12,6 +12,8 @@
 >   * [文章管理](#文章管理)
 > * [改动](#改动)
 >   * [彩色文本](#彩色文本)
+>   * [文章列表层级问题](#文章列表层级问题)
+>   * [文章内的图片显示](#文章内的图片显示) 
 >
 
 ## 基本信息
@@ -107,18 +109,20 @@
     ```
     ---
     title: All Articles
+    date: 2024-01-01
     ---
     ```
     * content文件夹的_index.md是主页内容， 可以后接标题和正文
     * articles文件夹的_index.md只能控制列表顶部文字
     * 再下层文件夹的_index.md可以添加图片，还可以后接内容做文字介绍
+    * 同一层有多个，可以添加日期来排序，日期新的在上面
 * 一般.md文件结构
     ```
     ---
     title: 1. Theme Installation
     date: 2021-12-19
     images: 
-    - https://raw.githubusercontent.com/apvarun/digital-garden-hugo-theme/main/images/digital-garden-logo.png
+    - https://raw.githubusercontent.com/lemonsoda9013/lemonsoda9013.github.io/main/images/lemon.png
     ---
     ```
     * 后接标题和正文
@@ -158,3 +162,13 @@
 <green>绿色文本</green>
 <strong><red>加粗红色文本</red></strong>
 ```
+
+### 文章列表层级问题
+
+修改了模板中的single.html和sidebar.html
+
+修改single.html使得在查看子分类下内容时，列表显示的是子分类的内容而不是最顶级分类的内容
+
+### 文章内的图片显示
+
+修改了single.html，删去了文章头部信息中图片在文章内部的显示
