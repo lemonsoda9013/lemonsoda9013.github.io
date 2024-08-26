@@ -301,82 +301,6 @@ video {
     max-width: 65ch
 }
 
-.prose :where(.red) {
-    color: #f44336;
-}
-
-.prose :where(.pink) {
-    color: #e91e63;
-}
-
-.prose :where(.purple) {
-    color: #9c27b0;
-}
-
-.prose :where(.deeppurple) {
-    color: #673ab7;
-}
-
-.prose :where(.indigo) {
-    color: #3f51b5;
-}
-
-.prose :where(.blue) {
-    color: #2196f3;
-}
-
-.prose :where(.lightblue) {
-    color: #03a9f4;
-}
-
-.prose :where(.cyan) {
-    color: #00bcd4;
-}
-
-.prose :where(.teal) {
-    color: #009688;
-}
-
-.prose :where(.green) {
-    color: #4bae4f;
-}
-
-.prose :where(.lightgreen) {
-    color: #8bc34a;
-}
-
-.prose :where(.lime) {
-    color: #cddc39;
-}
-
-.prose :where(.yellow) {
-    color: #ffeb3b;
-}
-
-.prose :where(.amber) {
-    color: #ffc107;
-}
-
-.prose :where(.orange) {
-    color: #ff9800;
-}
-
-.prose :where(.deeporange) {
-    color: #ff5722;
-}
-
-.prose :where(.brown) {
-    color: #795548;
-}
-
-.prose :where(.grey) {
-    color: #9e9e9e;
-}
-
-.prose :where(.bluegrey) {
-    color: #607d8b;
-}
-
 .prose :where(p):not(:where([class~=not-prose], [class~=not-prose] *)) {
     margin-top: 1.25em;
     margin-bottom: 1.25em
@@ -863,6 +787,82 @@ video {
 
 .prose :where(.prose>:last-child):not(:where([class~=not-prose], [class~=not-prose] *)) {
     margin-bottom: 0
+}
+
+.prose :where(red) {
+    color: #f44336;
+}
+
+.prose :where(pink) {
+    color: #e91e63;
+}
+
+.prose :where(purple) {
+    color: #9c27b0;
+}
+
+.prose :where(deeppurple) {
+    color: #673ab7;
+}
+
+.prose :where(indigo) {
+    color: #3f51b5;
+}
+
+.prose :where(blue) {
+    color: #2196f3;
+}
+
+.prose :where(lightblue) {
+    color: #03a9f4;
+}
+
+.prose :where(cyan) {
+    color: #00bcd4;
+}
+
+.prose :where(teal) {
+    color: #009688;
+}
+
+.prose :where(green) {
+    color: #4bae4f;
+}
+
+.prose :where(lightgreen) {
+    color: #8bc34a;
+}
+
+.prose :where(lime) {
+    color: #cddc39;
+}
+
+.prose :where(yellow) {
+    color: #ffeb3b;
+}
+
+.prose :where(amber) {
+    color: #ffc107;
+}
+
+.prose :where(orange) {
+    color: #ff9800;
+}
+
+.prose :where(deeporange) {
+    color: #ff5722;
+}
+
+.prose :where(brown) {
+    color: #795548;
+}
+
+.prose :where(grey) {
+    color: #9e9e9e;
+}
+
+.prose :where(bluegrey) {
+    color: #607d8b;
 }
 
 .sr-only {
