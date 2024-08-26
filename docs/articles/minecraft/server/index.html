@@ -354,17 +354,17 @@
 
         <h2 id="sprint-racer">Sprint Racer</h2>
         <div>
-          <p>当前服务器<span id="stat1">检测中...</span></p>
+          <p>当前服务器<span id="stat1"><yellow>检测中...</yellow></span></p>
         </div>
 
         <h2 id="super-voxel-party">Super Voxel Party</h2>
         <div>
-          <p>当前服务器<span id="stat2">检测中...</span></p>
+          <p>当前服务器<span id="stat2"><yellow>检测中...</yellow></span></p>
         </div>
 
         <h2 id="yet-another-bingo">Yet Another BINGO</h2>
         <div>
-          <p>当前服务器<span id="stat3">检测中...</span></p>
+          <p>当前服务器<span id="stat3"><yellow>检测中...</yellow></span></p>
         </div>
 
       </article>
@@ -375,19 +375,37 @@
   <script>
     function getMinecraftServerStatus(serverAddress, callback) {
       var xhr = new XMLHttpRequest();
+      xhr.timeout = 5000
       xhr.open('GET', 'https://tool.mintimate.cn/api/mcStatus?serverIP=' + serverAddress + '&serverType=Java', true);
       xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          var data = JSON.parse(xhr.responseText);
-          if (data.status === "1") {
-            var { max, online } = data.message.players;
-            callback(`在线人数${online}/${max}`);
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            var data = JSON.parse(xhr.responseText);
+            if (data.status === "1") {
+              var { max, online } = data.message.players;
+              var statusElement = document.createElement('div');
+              statusElement.innerHTML = `<green>在线人数${online}/${max}</green>`;
+              callback(statusElement);
+            } else {
+              var statusElement = document.createElement('div');
+              statusElement.innerHTML = `<red>离线</red>`;
+              callback(statusElement);
+            }
+          } else if (xhr.status === 0) {
+            var statusElement = document.createElement('div');
+            statusElement.innerHTML = `<red>请求超时</red>`;
+            callback(statusElement);
           } else {
-            callback("离线");
+            var statusElement = document.createElement('div');
+            statusElement.innerHTML = `<red>请求失败</red>`;
+            callback(statusElement);
           }
-        } else {
-          callback("离线");
         }
+      };
+      xhr.ontimeout = function () {
+        var statusElement = document.createElement('div');
+        statusElement.innerHTML = `<red>请求超时</red>`;
+        callback(statusElement);
       };
       xhr.send();
     }

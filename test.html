@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="sprint-racer">Sprint Racer</h2>
+    <div>
+        <p><span id="stat1"><yellow>检测中...</yellow></span></p>
+    </div>
+
+    <h2 id="super-voxel-party">Super Voxel Party</h2>
+    <div>
+        <p><span id="stat2"><yellow>检测中...</yellow></span></p>
+    </div>
+
+
+    <script>
+        function getMinecraftServerStatus(serverAddress, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.timeout = 5000
+            xhr.open('GET', 'https://tool.mintimate.cn/api/mcStatus?serverIP=' + serverAddress + '&serverType=Java', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        if (data.status === "1") {
+                            var { max, online } = data.message.players;
+                            var statusElement = document.createElement('div');
+                            statusElement.innerHTML = `<green>在线人数${online}/${max}</green>`;
+                            callback(statusElement);
+                        } else {
+                            var statusElement = document.createElement('div');
+                            statusElement.innerHTML = `<red>离线</red>`;
+                            callback(statusElement);
+                        }
+                    } else if (xhr.status === 0) {
+                        var statusElement = document.createElement('div');
+                        statusElement.innerHTML = `<red>请求超时</red>`;
+                        callback(statusElement);
+                    } else {
+                        var statusElement = document.createElement('div');
+                        statusElement.innerHTML = `<red>请求失败</red>`;
+                        callback(statusElement);
+                    }
+                }
+            };
+            xhr.ontimeout = function () {
+                var statusElement = document.createElement('div');
+                statusElement.innerHTML = `<red>请求超时</red>`;
+                callback(statusElement);
+            };
+            xhr.send();
+        }
+        getMinecraftServerStatus("acffd71f-ea7f-c27d-101b-1344a5becd3e.ofalias.com:56226", function (status) {
+            document.getElementById("stat1").textContent = status;
+        });
+        getMinecraftServerStatus("8fb74d2a-c7ab-8b1a-e414-31870fd3df78.ofalias.com:63562", function (status) {
+            document.getElementById("stat2").textContent = status;
+        });
+    </script>
+</body>
+
+</html>
