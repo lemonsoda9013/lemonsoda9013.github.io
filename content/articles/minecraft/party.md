@@ -1,6 +1,6 @@
 ---
 title: Super Voxel Party [1.19.4]
-date: 2024-08-26
+date: 2024-08-25
 images:
 - https://media.forgecdn.net/attachments/297/592/canal-1920.png
 ---

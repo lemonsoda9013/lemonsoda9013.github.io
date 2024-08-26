@@ -1,6 +1,6 @@
 ---
 title: Yet Another BINGO [1.20.4]
-date: 2024-08-26
+date: 2024-08-25
 images:
 - https://cdn.modrinth.com/data/mHeNceaH/images/cc432e0e8eb2c02a14068c1700bbc35bb2408ca2.png
 ---

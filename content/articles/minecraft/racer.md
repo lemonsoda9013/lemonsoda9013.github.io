@@ -1,6 +1,6 @@
 ---
 title: Sprint Racer [1.21.1]
-date: 2024-08-26
+date: 2024-08-25
 images:
 - https://media.forgecdn.net/attachments/577/755/2022-12-09_21.png
 ---

@@ -9,23 +9,30 @@
     <lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lemonsoda9013.github.io/articles/minecraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>服务器的地址和状态</title>
+      <link>https://lemonsoda9013.github.io/articles/minecraft/server/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://lemonsoda9013.github.io/articles/minecraft/server/</guid>
+      <description>检测每一个服务器的运行状态</description>
+    </item>
+    <item>
       <title>Sprint Racer [1.21.1]</title>
       <link>https://lemonsoda9013.github.io/articles/minecraft/racer/</link>
-      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://lemonsoda9013.github.io/articles/minecraft/racer/</guid>
       <description>马里奥赛车的MC版本，在竞速过程中使用各种道具获得胜利&#xA;说明 所有玩家在大厅准备之后可以开始游戏并票选地图 大厅能够对游戏选项进行设置 奔跑速度与血量有关，按疾跑键可以加速 按潜行键能够恢复血量，但是潜行时速度很慢 按空格键可以跳跃，跳跃会略微降低速度 每轮游戏有5局，前4局竞速，最后1局PVP 中途加入的玩家可以立刻加入下一局游戏 客户端 原版可玩，但是需要安装资源包&#xA;Fabric以外的非原版可能有兼容问题</description>
     </item>
     <item>
       <title>Super Voxel Party [1.19.4]</title>
       <link>https://lemonsoda9013.github.io/articles/minecraft/party/</link>
-      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://lemonsoda9013.github.io/articles/minecraft/party/</guid>
       <description>马里奥派对的MC版本，结合了小游戏与飞行棋&#xA;说明 需要4个玩家才能开始游戏，多余的玩家会变为旁观模式 可以选择派对模式（默认）或者小游戏模式（只有小游戏） 派对模式的目标是收集更多的星星，星星数相同比较金币数 每个玩家轮流roll点，在地图上行走相应格子，触发不同事件，获得/丢失金币和星星 所有玩家都roll点一次为一轮，每轮结束后进行一次小游戏，根据小游戏结果发放奖励 按F使用骰子等道具，骰子需要按空格查看结果 客户端 原版可玩，但是需要安装资源包</description>
     </item>
     <item>
       <title>Yet Another BINGO [1.20.4]</title>
       <link>https://lemonsoda9013.github.io/articles/minecraft/bingo/</link>
-      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://lemonsoda9013.github.io/articles/minecraft/bingo/</guid>
       <description>在原版世界中收集指定的物品，首先达成目标数量连线的队伍获胜&#xA;说明 游戏未开始时加入服务器会进入大厅，可以在大厅设置游戏的模式与选项 游戏开始后玩家会被传送到原版世界，需要在这里收集指定的物品 中途加入的玩家是旁观模式 一局游戏结束后，需要所有玩家退出服务器，服务器才会重启 服务器重启完成后可以进入大厅，并开始下一局游戏 客户端 原版可玩，建议使用Fabric端并安装对应mod&#xA;下载链接</description>
     </item>
