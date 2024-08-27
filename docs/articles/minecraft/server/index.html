@@ -431,14 +431,14 @@
     message2Btn.addEventListener('click', () => {
       message2.textContent = message2Text;
       message2.style.display = 'block';
-      navigator.clipboard.writeText(message1Text);
+      navigator.clipboard.writeText(message2Text);
       alert('已复制到剪贴板');
     });
 
     message3Btn.addEventListener('click', () => {
       message3.textContent = message3Text;
       message3.style.display = 'block';
-      navigator.clipboard.writeText(message1Text);
+      navigator.clipboard.writeText(message3Text);
       alert('已复制到剪贴板');
     });
 
@@ -521,15 +521,15 @@
     }
 
     $(document).ready(function () {
-      fetchStat('acffd71f-ea7f-c27d-101b-1344a5becd3e.ofalias.com:56226', 5000, 'result1', 'stat-1');
-      fetchStat('8fb74d2a-c7ab-8b1a-e414-31870fd3df78.ofalias.com:63562', 5000, 'result2', 'stat-2');
-      fetchStat('e61cf922-861f-7823-2c1e-a30a9e898996.ofalias.com:42129', 5000, 'result3', 'stat-3');
+      fetchStat(message1Text, 5000, 'result1', 'stat-1');
+      fetchStat(message2Text, 5000, 'result2', 'stat-2');
+      fetchStat(message3Text, 5000, 'result3', 'stat-3');
     });
 
     $(document).ready(function () {
-      fetchList('acffd71f-ea7f-c27d-101b-1344a5becd3e.ofalias.com:56226', 10000, 'list1', 'list-1');
-      fetchList('8fb74d2a-c7ab-8b1a-e414-31870fd3df78.ofalias.com:63562', 10000, 'list2', 'list-2');
-      fetchList('e61cf922-861f-7823-2c1e-a30a9e898996.ofalias.com:42129', 10000, 'list3', 'list-3');
+      fetchList(message1Text, 10000, 'list1', 'list-1');
+      fetchList(message2Text, 10000, 'list2', 'list-2');
+      fetchList(message3Text, 10000, 'list3', 'list-3');
     });
 
   </script>
