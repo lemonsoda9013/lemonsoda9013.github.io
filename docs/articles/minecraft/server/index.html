@@ -364,6 +364,10 @@
 
         <h2>Sprint Racer [1.21.1]</h2>
 
+        <p><button id="message1Btn">查看地址</button>
+        <div class="hidden-message" id="message1"></div>
+        </p>
+
         <p>状态: <span id="stat-1">
             <orange>正在获取信息...</orange>
           </span></p>
@@ -373,6 +377,10 @@
 
         <h2>Super Voxel Party [1.19.4]</h2>
 
+        <p><button id="message2Btn">查看地址</button>
+        <div class="hidden-message" id="message2"></div>
+        </p>
+
         <p>状态: <span id="stat-2">
             <orange>正在获取信息...</orange>
           </span></p>
@@ -381,6 +389,10 @@
           </span></p>
 
         <h2>Yet Another BINGO [1.20.4]</h2>
+
+        <p><button id="message3Btn">查看地址</button>
+        <div class="hidden-message" id="message3"></div>
+        </p>
 
         <p>状态: <span id="stat-3">
             <orange>正在获取信息...</orange>
@@ -396,6 +408,41 @@
   </div>
 
   <script>
+
+    const message1Btn = document.getElementById('message1Btn');
+    const message2Btn = document.getElementById('message2Btn');
+    const message3Btn = document.getElementById('message3Btn');
+
+    const message1 = document.getElementById('message1');
+    const message2 = document.getElementById('message2');
+    const message3 = document.getElementById('message3');
+
+    const message1Text = "acffd71f-ea7f-c27d-101b-1344a5becd3e.ofalias.com:56226";
+    const message2Text = "8fb74d2a-c7ab-8b1a-e414-31870fd3df78.ofalias.com:63562";
+    const message3Text = "e61cf922-861f-7823-2c1e-a30a9e898996.ofalias.com:42129";
+
+    message1Btn.addEventListener('click', () => {
+      message1.textContent = message1Text;
+      message1.style.display = 'block';
+      navigator.clipboard.writeText(message1Text);
+      alert('已复制到剪贴板');
+    });
+
+    message2Btn.addEventListener('click', () => {
+      message2.textContent = message2Text;
+      message2.style.display = 'block';
+      navigator.clipboard.writeText(message1Text);
+      alert('已复制到剪贴板');
+    });
+
+    message3Btn.addEventListener('click', () => {
+      message3.textContent = message3Text;
+      message3.style.display = 'block';
+      navigator.clipboard.writeText(message1Text);
+      alert('已复制到剪贴板');
+    });
+
+
     function fetchStat(url, timeout, resultVar, spanId) {
       let timeoutFlag = false;
 
