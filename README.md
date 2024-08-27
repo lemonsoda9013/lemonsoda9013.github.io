@@ -176,6 +176,12 @@
 
 ## MC服务器状态获取
 
+用于按钮视效的class
+
+```
+class="px-2 py-1.5 rounded-md text-sm flex items-center justify-between bg-slate-800 text-white hover:bg-slate-200 hover:text-slate-800 dark:bg-slate-50 dark:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-400" 
+```
+
 在```<body>```之前添加如下代码引用jquery
 
 ```

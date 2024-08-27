@@ -10,21 +10,15 @@
 
 <body>
 
+    <h1>Minecraft@music</h1>
+
     <strong>注：检测在线玩家功能不是100%可用，请勿频繁刷新</strong>
 
-    <p><button id="message1Btn">查看地址</button>
+    <h2>Sprint Racer [1.21.1]</h2>
+
+    <p><button class="px-2 py-1.5 rounded-md text-sm flex items-center justify-between bg-slate-800 text-white hover:bg-slate-200 hover:text-slate-800 dark:bg-slate-50 dark:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-400" id="message1Btn">查看地址</button>
     <div class="hidden-message" id="message1"></div>
     </p>
-
-    <p><button id="message2Btn">查看地址</button>
-    <div class="hidden-message" id="message2"></div>
-    </p>
-
-    <p><button id="message3Btn">查看地址</button>
-    <div class="hidden-message" id="message3"></div>
-    </p>
-
-    <h2>Sprint Racer [1.21.1]</h2>
 
     <p>状态: <span id="stat-1">
             <orange>正在获取信息...</orange>
@@ -35,6 +29,10 @@
 
     <h2>Super Voxel Party [1.19.4]</h2>
 
+    <p><button class="px-2 py-1.5 rounded-md text-sm flex items-center justify-between bg-slate-800 text-white hover:bg-slate-200 hover:text-slate-800 dark:bg-slate-50 dark:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-400" id="message2Btn">查看地址</button>
+    <div class="hidden-message" id="message2"></div>
+    </p>
+
     <p>状态: <span id="stat-2">
             <orange>正在获取信息...</orange>
         </span></p>
@@ -43,6 +41,10 @@
         </span></p>
 
     <h2>Yet Another BINGO [1.20.4]</h2>
+
+    <p><button class="px-2 py-1.5 rounded-md text-sm flex items-center justify-between bg-slate-800 text-white hover:bg-slate-200 hover:text-slate-800 dark:bg-slate-50 dark:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-400" id="message3Btn">查看地址</button>
+    <div class="hidden-message" id="message3"></div>
+    </p>
 
     <p>状态: <span id="stat-3">
             <orange>正在获取信息...</orange>
@@ -163,7 +165,7 @@
         }
 
         $(document).ready(function () {
-            fetchStat('acffd71f-ea7f-c27d-101b-1344a5becd3e.ofalias.com:56226', 5000, 'result1', 'stat-1');
+            //fetchStat('acffd71f-ea7f-c27d-101b-1344a5becd3e.ofalias.com:56226', 5000, 'result1', 'stat-1');
             //fetchStat('8fb74d2a-c7ab-8b1a-e414-31870fd3df78.ofalias.com:63562', 5000, 'result2', 'stat-2');
             //fetchStat('e61cf922-861f-7823-2c1e-a30a9e898996.ofalias.com:42129', 5000, 'result3', 'stat-3');
         });
