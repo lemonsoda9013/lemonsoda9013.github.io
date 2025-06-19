@@ -1,0 +1,11 @@
+{
+  "name": "Hugo Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu", 
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:latest": {
+      "version": "latest",
+      "extended": true
+    }
+  },
+  "postCreateCommand": "hugo version"
+}
